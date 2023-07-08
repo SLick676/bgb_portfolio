@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <style>
+   
+      
+        body, html {
+            
+  background-image: url('img/apple-gd4c6bb507_1280.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+
+      margin: 50px;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #F44336;
+    
+    }
+    
+    header {
+      background-color: #FFF;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    footer {
+      background-color: #FFF;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    nav {
+      background-color: #FF5252;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav a {
+      color: #FFF;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+    
+    section {
+      padding: 20px;
+      color: #f33636;
+      text-align: center;
+      border-color: rgb(186, 189, 192);
+      box-shadow: #FFF;
+      box-sizing: content-box;
+      position: relative;
+    }
+    
+    .portfolio-img {
+      width: 300px;
+      place-content: center;
+      height: 300px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 50%;
+      background-color: #c71111;
+
+    }
+    .glow {
+  font-size: 38px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a50909, 0 0 40px #700707, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3f0411, 0 0 40px #ee083a, 0 0 50px #47010b, 0 0 60px #7a040a, 0 0 70px #570513, 0 0 80px #ff4da6;
+  }
+}
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <h1>Portfolio of Mark Nkohla</h1>
+  </header>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</div>
+  <section>
+    <h2>Welcome to my Portfolio</h2>
+    <img class="portfolio-img" src="img/Mark Nkohla .jpg" alt="Portfolio Picture">
+  </section>
+   
+  <section id="about">
+    <h2>About</h2>
+    <p class="glow">I am a seasoned professional with a diverse range of experiences and a passion for technology, design, and music. 
+        With a strong background in computer systems, I has gained extensive knowledge in web design and the effective utilization of cutting-edge marketing tools.
+         I have educated myself and elevated my skills through hands-on experience, working with various organizations and contributing to the digital growth of businesses.
+         <br><br>
+        Additionally,I have demonstrated his adaptability and work ethic through my experience in plant-based nurseries. 
+        My time spent in this field provided me with a deep understanding of sustainable practices and informal settlement agricultural sector in Mfuleni,
+         enriching my skill set with knowledge of environmental conservation and the cultivation of plant-based ecosystems.
+        <br><br>
+        Furthermore,I have also showcased his dedication and strong work ethic in the retail sector, having worked at Woolworths. 
+        My experience in this dynamic environment allowed him to develop exceptional interpersonal and customer service skills.
+         My ability to collaborate effectively within a team and deliver outstanding results to meet customer needs has been instrumental in my success.
+        <br><br>
+        Beyond my professional pursuits, Mark is a passionate music producer. 
+        His love for music drives me to continuously explore new avenues of creativity, constantly refining my skills and techniques.
+         hard work and dedication shine through in my music, and I apply the same level of commitment and attention to detail in all my endeavors.
+        <br><br>
+        Overall, I am a multifaceted individual with extensive computer experience, expertise in web design and marketing tools, and a passion for music production. 
+        My diverse background and strong work ethic make me a valuable asset in any field he chooses to pursue.</p>
+  
+    </section>
+
+
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Linkedin:www.linkedin.com/in/mark-nkohla-04b541272 </p>
+    
+  </section>
+  
+  <footer>
+    &copy; 2023 Mark Nkohla
+  </footer>
+  
+  <script>
+  
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", smoothScroll);
+    });
+
+    function smoothScroll(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth"
+      });
+    }
+  </script>
+</body>
+</html>
