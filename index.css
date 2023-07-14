@@ -26,6 +26,13 @@
       padding: 20px;
       text-align: center;
     }
+
+    button{
+      border-radius: 25px;
+      color: #964a4a;
+      border-color: #c71111;
+      text-decoration-color: #f0f1f3;
+    }
     
     nav {
       background-color: #FF5252;
